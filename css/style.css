@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-size: .938rem;
+  line-height: 1.5;
+  padding-top: 1.875rem; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: #262626;
+  text-decoration: none; }
+
+.container {
+  width: 90%;
+  max-width: 68.75rem;
+  margin: auto; }
+
+.dark {
+  color: #fff; }
+
+.dark .btn {
+  background: #f4f4f4;
+  color: #333; }
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: .625rem 1.25rem;
+  background: #262626;
+  color: #fff;
+  font-size: 1.2rem; }
+  .btn:hover {
+    opacity: 0.9; }
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 2;
+  display: none; }
+  @media only screen and (max-width: 700px) {
+    .menu-btn {
+      display: block; } }
+  .menu-btn:hover {
+    opacity: 0.5; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.75rem;
+  padding: 1.25rem 0;
+  font-size: 1rem; }
+
+.nav ul li {
+  padding: 0 0.625rem; }
+
+.nav ul li a {
+  padding-bottom: 2px; }
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #262626; }
+
+.nav ul.nav__right {
+  margin-right: 50px; }
+
+.nav
+.logo {
+  width: 10rem; }
+
+.nav ul.nav__main {
+  flex: 1;
+  margin-left: 1.25px; }
+  @media only screen and (max-width: 700px) {
+    .nav ul.nav__main {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #f2f2f2;
+      width: 50%;
+      height: 100%;
+      border-right: #ccc 1px solid;
+      opacity: 0.9;
+      padding: 1.875rem;
+      transform: translateX(-31rem);
+      transition: transform .5s ease-in-out; } }
+
+@media only screen and (max-width: 700px) {
+  .nav ul.nav__main li:last-child {
+    border-bottom: none; } }
+
+@media only screen and (max-width: 700px) {
+  .nav ul.nav__main li {
+    padding: .625rem;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px; } }
+
+@media only screen and (max-width: 700px) {
+  .nav ul.nav__main.show {
+    transform: translateX(1.25rem); } }
+
+.nav ul {
+  display: flex; }
+
+.showcase {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/showcase.jpeg");
+  /* The image used */
+  /* You must set a specified height */
+  background-position: center center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 3.125rem;
+  margin-bottom: 1.25rem; }
+  .showcase h2,
+  .showcase p {
+    margin-bottom: .625rem; }
+  .showcase .btn {
+    margin-top: 1.25rem; }
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.25rem;
+  margin-bottom: 2.5rem; }
+  @media only screen and (max-width: 700px) {
+    .home-cards {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 500px) {
+    .home-cards {
+      grid-template-columns: 1fr; } }
+  .home-cards img {
+    width: 100%;
+    margin-bottom: 1.25rem; }
+  .home-cards h3 {
+    margin-bottom: 5px; }
+  .home-cards a {
+    display: inline-block;
+    padding-top: .625rem;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .2s; }
+    .home-cards a:hover {
+      margin-left: .625rem; }
+
+.xbox {
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/xbox.png");
+  /* The image used */
+  /* You must set a specified height */
+  background-position: top center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  margin-bottom: 1.25rem; }
+  .xbox .content {
+    width: 40%;
+    padding: 3.125rem 0 0 1.875rem; }
+  .xbox p {
+    margin: .625rem 0 1.25rem; }
+  @media only screen and (max-width: 700px) {
+    .xbox .content p {
+      display: none; } }
+  @media only screen and (max-width: 700px) {
+    .xbox .content h2 {
+      margin-bottom: 1.25rem; } }
+
+.carbon {
+  height: 350px;
+  width: 100%;
+  background: url("../img/carbon.jpg") no-repeat top center/cover; }
+  .carbon .content {
+    width: 55%;
+    padding: 6.25rem 0 0 1.875rem; }
+    @media only screen and (max-width: 700px) {
+      .carbon .content {
+        width: 85%; } }
+  .carbon p {
+    margin: .625rem 0 1.25rem; }
+
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.875rem 0 1.875rem; }
+  .follow > * {
+    margin-right: .625rem; }
+
+.links {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0; }
+  .links__inner {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: .625rem;
+    align-items: flex-start;
+    justify-content: center; }
+    @media only screen and (max-width: 700px) {
+      .links__inner ul {
+        margin-bottom: 1.25rem; } }
+    @media only screen and (max-width: 700px) {
+      .links__inner {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 700px) {
+      .links__inner {
+        grid-template-columns: 1fr; } }
+  .links li {
+    line-height: 2.8; }
+
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 1.25rem 0; }
+  .footer__inner {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 0 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer li {
+    margin-right: 1.875rem;
+    margin-bottom: 1.25rem; }
+  .footer div {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center; }
+    .footer div i {
+      margin-right: .625rem; }
+  .footer .fa-globe {
+    margin-right: .625rem; }

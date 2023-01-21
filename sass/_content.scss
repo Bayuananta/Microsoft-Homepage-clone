@@ -1,0 +1,29 @@
+.xbox{
+    height: 400px;
+    width: 100%;
+     background-image: url("../img/xbox.png"); /* The image used */ /* You must set a specified height */
+    background-position: top center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-bottom: 1.25rem;
+
+    & .content{
+        width: 40%;
+        padding: 3.125rem 0 0 1.875rem;
+    }
+
+    & p{
+        margin: .625rem 0 1.25rem;
+    }
+    & .content p{
+        @media only screen and (max-width:$bp-medium){
+            display: none;
+        }
+    }
+
+    & .content h2{
+        @media only screen and (max-width:$bp-medium){
+            margin-bottom: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.carbon{
+    height: 350px;
+    width: 100%;
+    background: url("../img/carbon.jpg") no-repeat top center/cover;
+
+    & .content{
+        width: 55%;
+        padding: 6.25rem 0 0 1.875rem;
+
+        @media only screen and (max-width:$bp-medium){
+            width: 85%;
+        }
+    }
+
+    & p{
+        margin: .625rem 0 1.25rem;
+    }
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.875rem 0 1.875rem;
+
+    & > *{
+        margin-right: .625rem;
+    }
+}

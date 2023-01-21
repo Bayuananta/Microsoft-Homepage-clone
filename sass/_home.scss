@@ -1,0 +1,36 @@
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25rem;
+    margin-bottom: 2.5rem;
+
+    @media only screen and (max-width:$bp-medium){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width:$bp-small){
+        grid-template-columns: 1fr;
+    }
+
+    & img{
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+
+    & h3{
+        margin-bottom: 5px;
+    }
+
+    & a{
+        display: inline-block;
+        padding-top: .625rem;
+        color: #0067b8;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all .2s;
+
+        &:hover{
+            margin-left: .625rem;
+        }
+    }
+}
