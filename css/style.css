@@ -12,6 +12,12 @@ body {
 html {
   box-sizing: border-box;
   font-size: 100%; }
+  @media only screen and (max-width: 700px) {
+    html {
+      font-size: 87.5%; } }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -241,9 +247,9 @@ a {
     @media only screen and (max-width: 700px) {
       .links__inner {
         grid-template-columns: repeat(2, 1fr); } }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 500px) {
       .links__inner {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: repeat(2, 1fr); } }
   .links li {
     line-height: 2.8; }
 

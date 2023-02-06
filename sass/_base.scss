@@ -17,6 +17,14 @@ body{
 html{
     box-sizing: border-box;
     font-size: 100%;
+
+    @media only screen and (max-width:$bp-medium){
+        font-size: 87.5%;
+    }
+
+    @media only screen and (max-width:$bp-small){
+        font-size: 75%;
+    }
 }
 
 body{
