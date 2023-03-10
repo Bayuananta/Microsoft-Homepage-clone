@@ -36,11 +36,11 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: #f2f2f2;
+        background: rgba(#fff, 0.95);
         width: 50%;
         height: 100%;
         border-right: #ccc 1px solid;
-        opacity: 0.9;
+        opacity: 1;
         padding: 1.875rem;
         transform: translateX(-31rem);
         transition: transform .5s ease-in-out;
@@ -63,7 +63,7 @@
 
 .nav ul.nav__main.show{
     @media only screen and (max-width:$bp-medium){
-    transform: translateX(1.25rem);
+    transform: translateX(0);
     }
 }
 
